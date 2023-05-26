@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6785E9A6-55C7-43BE-BD05-40FF387CEE85}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankaOtomasyonu</RootNamespace>
+    <AssemblyName>BankaOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bakiye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bakiye.Designer.cs">
+      <DependentUpon>Bakiye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HareketKaydet.cs" />
+    <Compile Include="Havale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Havale.Designer.cs">
+      <DependentUpon>Havale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapHareketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapHareketleri.Designer.cs">
+      <DependentUpon>HesapHareketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriAra.Designer.cs">
+      <DependentUpon>MusteriAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriEkle.Designer.cs">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGuncelle.Designer.cs">
+      <DependentUpon>MusteriGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriListele.Designer.cs">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriSil.Designer.cs">
+      <DependentUpon>MusteriSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriİslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriİslem.Designer.cs">
+      <DependentUpon>Musteriİslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaCek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaCek.Designer.cs">
+      <DependentUpon>ParaCek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaYatir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaYatir.Designer.cs">
+      <DependentUpon>ParaYatir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegistir.Designer.cs">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yetkiliİslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yetkiliİslem.Designer.cs">
+      <DependentUpon>Yetkiliİslem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bakiye.resx">
+      <DependentUpon>Bakiye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Havale.resx">
+      <DependentUpon>Havale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapHareketleri.resx">
+      <DependentUpon>HesapHareketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriAra.resx">
+      <DependentUpon>MusteriAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriEkle.resx">
+      <DependentUpon>MusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGuncelle.resx">
+      <DependentUpon>MusteriGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriListele.resx">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriSil.resx">
+      <DependentUpon>MusteriSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriİslem.resx">
+      <DependentUpon>Musteriİslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaCek.resx">
+      <DependentUpon>ParaCek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaYatir.resx">
+      <DependentUpon>ParaYatir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SifreDegistir.resx">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yetkiliİslem.resx">
+      <DependentUpon>Yetkiliİslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
